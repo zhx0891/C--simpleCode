@@ -3,17 +3,24 @@ try
 {
     Console.WriteLine("???");
     int a = int.Parse(Console.ReadLine());
-    int b = a;
-    int count = 0;
+    int b = 0;
+    int c = 0;
     while (a > 0)
     {
-        if (a % 2 == 0) { count++; }
-        a--;
+        switch (a%2)
+        {
+            case 0:
+                b++;
+                break;
+            case 1:
+                c++;
+                break;   
+        }
+        a--;    
     }
-    Console.WriteLine($"чётных чисел {count} нечётных чисел {b - count}");
+    Console.WriteLine($"чётные {b} нечётные {c}");
 }
 catch { Console.WriteLine("you're wrong !!! "); }
-Console.ReadLine();
 
 
 
@@ -23,8 +30,21 @@ Console.ReadLine();
 
 
 
-
-
+//try
+//{
+//    Console.WriteLine("???");
+//    int a = int.Parse(Console.ReadLine());
+//    int b = a;
+//    int count = 0;
+//    while (a > 0)
+//    {
+//        if (a % 2 == 0) { count++; }
+//        a--;
+//    }
+//    Console.WriteLine($"чётных чисел {count} нечётных чисел {b - count}");
+//}
+//catch { Console.WriteLine("you're wrong !!! "); }
+//Console.ReadLine();
 
 
 
