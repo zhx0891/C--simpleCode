@@ -1,26 +1,51 @@
 ﻿
-try
+
+for (int i = 0; i < 30; i++)
 {
-    Console.WriteLine("???");
-    int a = int.Parse(Console.ReadLine());
-    int b = 0;
-    int c = 0;
-    while (a > 0)
-    {
-        switch (a%2)
-        {
-            case 0:
-                b++;
-                break;
-            case 1:
-                c++;
-                break;   
-        }
-        a--;    
-    }
-    Console.WriteLine($"чётные {b} нечётные {c}");
+for (int j = 0; j < i; j++)
+{
+Console.Write("#");
+
 }
-catch { Console.WriteLine("you're wrong !!! "); }
+Console.WriteLine();
+}
+
+for (int i = 0; i < 30; i++)
+{
+for (int j = 30; j > i; j--)
+{
+Console.Write("#");
+
+}
+Console.WriteLine();
+}
+
+
+
+
+
+//try
+//{
+//    Console.WriteLine("???");
+//    int a = int.Parse(Console.ReadLine());
+//    int b = 0;
+//    int c = 0;
+//    while (a > 0)
+//    {
+//        switch (a%2)
+//        {
+//            case 0:
+//                b++;
+//                break;
+//            case 1:
+//                c++;
+//                break;   
+//        }
+//        a--;    
+//    }
+//    Console.WriteLine($"чётные {b} нечётные {c}");
+//}
+//catch { Console.WriteLine("you're wrong !!! "); }
 
 
 
